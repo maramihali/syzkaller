@@ -242,9 +242,15 @@ fq_pie_policy [
 	TCA_FQ_PIE_QUANTUM		nlattr[TCA_FQ_PIE_QUANTUM, int32]
 	TCA_FQ_PIE_MEMORY_LIMIT		nlattr[TCA_FQ_PIE_MEMORY_LIMIT, int32]
 	TCA_FQ_PIE_ECN_PROB		nlattr[TCA_FQ_PIE_ECN_PROB, int32[0:100]]
+<<<<<<< HEAD
 	TCA_FQ_PIE_ECN			nlattr[TCA_FQ_PIE_ECN, bool32]
 	TCA_FQ_PIE_BYTEMODE		nlattr[TCA_FQ_PIE_BYTEMODE, bool32]
 	TCA_FQ_PIE_DQ_RATE_ESTIMATOR	nlattr[TCA_FQ_PIE_DQ_RATE_ESTIMATOR, bool32]
+=======
+	TCA_FQ_PIE_ECN			nlattr[TCA_FQ_PIE_ECN, int32[0:1]]
+	TCA_FQ_PIE_BYTEMODE		nlattr[TCA_FQ_PIE_BYTEMODE, int32[0:1]]
+	TCA_FQ_PIE_DQ_RATE_ESTIMATOR	nlattr[TCA_FQ_PIE_DQ_RATE_ESTIMATOR, int32[0:1]]
+>>>>>>> sys/linux: add fq_pie description for netlink_route_sched
 ] [varlen]
 
 # TODO: we should not have TCA_GRED_PARMS and TCA_GRED_STAB when do init
