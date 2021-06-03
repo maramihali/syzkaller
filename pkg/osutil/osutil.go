@@ -245,6 +245,10 @@ func MkdirAll(dir string) error {
 	return os.MkdirAll(dir, DefaultDirPerm)
 }
 
+func Mkdir(path string) error {
+	return os.Mkdir(path, DefaultDirPerm)
+}
+
 func WriteFile(filename string, data []byte) error {
 	return ioutil.WriteFile(filename, data, DefaultFilePerm)
 }
